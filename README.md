@@ -4,7 +4,7 @@
 This C++ application calculates the takeoff speed, or Rotation Speed \(V<sub>R</sub>) for a C-17 Globemaster III aircraft. 
 The calculator considers various parameters such as fuel load, passenger and cargo weight, field elevation, and environmental conditions. 
 It adjusts the V<sub>R</sub> factor for added safety margin at high field elevation or heavy loads. This calculator assumes that the aircraft is in takeoff
-configuration, flaps 1/2, slats extended.
+configuration, flaps 1/2, slats extended. This program also showcases the C-17s impressive lift generation capabilities.
 
 ## Features
 - **Input Ops Parameters**: Users input the fuel load, passenger weight, cargo weight, and field elevation for calculations.
@@ -51,7 +51,7 @@ Stall speed is the minimum speed at which the aircraft can maintain aerodynamic 
   - \( W \) is the total weight of the aircraft in Newtons.
   - \( ρ \) (rho) is the air density in kg/m³.
   - \( S \) is the wing area in square meters.
-  - (C<sub>L</sub>) is the lift coefficient, I used 3.156 for a C-17 in takeoff configuration.
+  - (C<sub>L</sub>) is the lift coefficient, I used 3.156 (https://archive.aoe.vt.edu/mason/Mason_f/C17PresS07.pdf) for a C-17 in takeoff configuration.
 
 ### Takeoff Speed (V<sub>R</sub>)
 Takeoff speed is calculated to ensure it includes a safety margin above the stall speed, usually 1.1 to 1.3.
