@@ -1,7 +1,7 @@
 # C-17 Globemaster III Takeoff Speed Calculator
 
 ## Description
-This C++ application calculates the takeoff speed, or Rotation Speed \(V<sub>R</sub>) for a C-17 Globemaster III aircraft. 
+This C++ console-based application calculates the takeoff speed, or Rotation Speed \(V<sub>R</sub>) for a C-17 Globemaster III aircraft. 
 The calculator considers various parameters such as fuel load, passenger and cargo weight, field elevation, and environmental conditions. 
 It adjusts the V<sub>R</sub> factor for added safety margin at high field elevation or heavy loads. This calculator assumes that the aircraft is in takeoff
 configuration, flaps 1/2, slats extended. This program also showcases the C-17s impressive lift generation capabilities.
@@ -59,3 +59,19 @@ Takeoff speed is calculated to ensure it includes a safety margin above the stal
 - **Where**:
   - V<sub>S</sub> is the stall speed.
   - factor is the margin of safety above stall speed at which point it is safe to initiate rotation and leave the runway. I used 1.15 as the base factor, with +=0.05 modifiers for heavy load and high field elevations.
+
+## Instructions for use ##
+- Navigate to "releases" and download "c17vrspeedcalculator.exe". Windows 10 or later, 64-bit required.
+- Double click the file after downloading, this should open the file in the command prompt.
+- Enter the values as prompted. Here are some guidelines for those who are unfamiliar with C17 operations.
+    - Fuel load is generally between 50,000 and 244,000(Max) lbs
+    - Pax, or passengers, varies. Generally an aircrew will include 5, then additional passengers may occupy the cargo bay. 134 is max.
+    - Cargo weight can vary up to 170,900 lbs, typical military vehicles may be between 25,000 and 50,000 lbs each. A single M1 Abrams tank weighs 144,000 lbs.
+    - Field Elevation can be obtained via SkyVector or a simple google search. Sea-Tac Int'l (KSEA), for example, is at 432 ft MSL.
+    - Local Temperature is simply the temperature at the airfield, for this application just use whatever weather reporting app you have.
+    - Barometric pressure can also be obtained from your weather app, or if you want for the purposes of this simulation, you can use the standard at sea-level pressure 29.92 inHg.
+    - Relative humidity is another factor easily obtained via your weather app.
+    - Once you've entered all the prompted inputs, the program will return your total weight, and Rotation speed (V<sub>R</sub>).
+- Press any key to exit, reopen the application to repeat program.
+
+  
