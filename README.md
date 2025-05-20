@@ -5,9 +5,7 @@ This C++ console-based application calculates the takeoff speed, or Rotation Spe
 The calculator considers various parameters such as fuel load, passenger and cargo weight, field elevation, and environmental conditions. 
 It adjusts the V<sub>R</sub> factor for added safety margin at high field elevation or heavy loads. This calculator assumes that the aircraft is in takeoff
 configuration, flaps 1/2, slats extended. This program also showcases the C-17s impressive lift generation capabilities.
-
-## Screenshot
-![Program Demo](c17.png)
+![Program Demo](C17.png)
 
 ## Features
 - **Input Ops Parameters**: Users input the fuel load, passenger weight, cargo weight, and field elevation for calculations.
