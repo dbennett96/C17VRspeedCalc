@@ -6,6 +6,9 @@ The calculator considers various parameters such as fuel load, passenger and car
 It adjusts the V<sub>R</sub> factor for added safety margin at high field elevation or heavy loads. This calculator assumes that the aircraft is in takeoff
 configuration, flaps 1/2, slats extended. This program also showcases the C-17s impressive lift generation capabilities.
 
+## Screenshot
+![Program Demo](c17.png)
+
 ## Features
 - **Input Ops Parameters**: Users input the fuel load, passenger weight, cargo weight, and field elevation for calculations.
 - **Environmental Adjustments**: The calculator adjusts the required takeoff speed based on user inputs of local temperature, barometric pressure, and humidity.
